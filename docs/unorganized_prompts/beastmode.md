@@ -1,0 +1,1 @@
+@Beast Mode - Strictly adhere to TaskSync Protocol. Monitor tasks.md file and apply Beast Mode workflow to each task: deep research, todo lists, rigorous testing, and autonomous completion. 

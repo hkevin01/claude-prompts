@@ -1,0 +1,77 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Validate Prompts",
+      "type": "shell",
+      "command": "python",
+      "args": ["scripts/validate_prompts.py"],
+      "group": "test",
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Generate Catalog",
+      "type": "shell", 
+      "command": "python",
+      "args": ["scripts/generate_catalog.py"],
+      "group": "build",
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Format All Markdown",
+      "type": "shell",
+      "command": "npx",
+      "args": ["prettier", "--write", "**/*.md"],
+      "group": "build",
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Lint Markdown",
+      "type": "shell",
+      "command": "npx",
+      "args": ["markdownlint", "**/*.md"],
+      "group": "test",
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Create New Prompt",
+      "type": "shell",
+      "command": "python",
+      "args": ["scripts/create_prompt.py"],
+      "group": "build",
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": true,
+        "panel": "shared"
+      },
+      "problemMatcher": []
+    }
+  ]
+}

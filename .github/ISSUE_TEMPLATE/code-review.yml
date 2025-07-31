@@ -1,0 +1,47 @@
+name: 🔍 Code Review Request
+description: Request Claude AI assisted code review
+title: "[CODE REVIEW] "
+labels: ["code-review", "claude-ai"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Claude AI Code Review Request
+
+        Use this template to request a Claude AI assisted code review. Select the type of review needed below.
+
+  - type: dropdown
+    id: review-type
+    attributes:
+      label: Review Type
+      description: Select the type of code review needed
+      options:
+        - Comprehensive Code Review
+        - Security-Focused Review
+        - Performance Review
+        - Architecture Review
+        - Legacy Code Review
+    validations:
+      required: true
+
+  - type: textarea
+    id: code-context
+    attributes:
+      label: Code Context
+      description: Provide context about the code to be reviewed
+      placeholder: |
+        - What does this code do?
+        - What are the main concerns?
+        - Are there specific areas to focus on?
+    validations:
+      required: true
+
+  - type: textarea
+    id: claude-prompt
+    attributes:
+      label: Claude Prompt (Auto-populated)
+      description: "This will be auto-populated based on your review type selection"
+      value: |
+        Please copy the appropriate prompt from `.github/prompts/code-review/` based on your selection above.
+    validations:
+      required: false

@@ -1,0 +1,31 @@
+# Claude AI Prompt Library
+# Generated automatically by Claude AI Prompt Generator
+version: "1.0.0"
+metadata:
+  created: "$(date)"
+  generator: "Claude AI Prompt Generator v1.0.0"
+  description: "Comprehensive Claude AI prompts for software development tasks"
+
+categories:
+  - name: "code-review"
+    description: "Code quality and review prompts"
+  - name: "development"
+    description: "General development and debugging prompts"
+  - name: "architecture"
+    description: "System design and architecture prompts"
+  - name: "optimization"
+    description: "Performance and algorithm optimization prompts"
+  - name: "testing"
+    description: "Test-driven development and testing prompts"
+  - name: "generation"
+    description: "Code generation from specifications"
+  - name: "legacy"
+    description: "Legacy code modernization prompts"
+  - name: "api"
+    description: "API development and design prompts"
+
+usage:
+  github_issues: true
+  github_actions: true
+  vscode_integration: true
+  cli_tool: true

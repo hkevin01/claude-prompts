@@ -1,0 +1,48 @@
+{
+  "recommendations": [
+    // Essential for markdown editing
+    "yzhang.markdown-all-in-one",
+    "DavidAnson.vscode-markdownlint",
+    "bierner.markdown-preview-github-styles",
+    "bierner.markdown-mermaid",
+    
+    // Code formatting and linting
+    "esbenp.prettier-vscode",
+    "EditorConfig.EditorConfig",
+    "streetsidesoftware.code-spell-checker",
+    "usernamehw.errorlens",
+    
+    // Git integration
+    "eamodio.gitlens",
+    "GitHub.vscode-pull-request-github",
+    "github.vscode-github-actions",
+    
+    // AI assistance
+    "GitHub.copilot",
+    "GitHub.copilot-chat",
+    
+    // Language support
+    "ms-python.python",
+    "ms-python.black-formatter",
+    "ms-python.flake8",
+    "redhat.java",
+    "ms-vscode.cpptools",
+    
+    // File management and navigation
+    "alefragnani.Bookmarks",
+    "christian-kohler.path-intellisense",
+    "formulahendry.auto-rename-tag",
+    
+    // Productivity
+    "ms-vscode.todo-highlight",
+    "Gruntfuggly.todo-tree",
+    "PKief.material-icon-theme",
+    
+    // YAML support for frontmatter
+    "redhat.vscode-yaml",
+    
+    // JSON with comments support
+    "ms-vscode.vscode-json",
+    "undefined_publisher.tasksync-chat"
+  ]
+}

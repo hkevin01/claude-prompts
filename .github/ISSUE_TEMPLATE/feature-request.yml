@@ -1,0 +1,34 @@
+name: ✨ Feature Request + Design
+description: Request a new feature with Claude AI architecture assistance
+title: "[FEATURE] "
+labels: ["feature", "architecture", "claude-ai"]
+body:
+  - type: textarea
+    id: feature-description
+    attributes:
+      label: Feature Description
+      description: Describe the feature you'd like to see
+      placeholder: What should this feature do?
+    validations:
+      required: true
+
+  - type: textarea
+    id: requirements
+    attributes:
+      label: Requirements
+      description: Functional and non-functional requirements
+      placeholder: |
+        - Performance requirements
+        - Security considerations
+        - Integration needs
+        - User experience requirements
+    validations:
+      required: true
+
+  - type: textarea
+    id: architecture-prompt
+    attributes:
+      label: Claude Architecture Prompt
+      description: "Use the architecture prompt from `.github/prompts/architecture/system-design.md`"
+      value: |
+        Copy the system design prompt and provide the requirements above for comprehensive architectural guidance.

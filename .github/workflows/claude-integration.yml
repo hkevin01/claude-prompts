@@ -1,0 +1,97 @@
+name: Claude AI Integration
+
+on:
+  issues:
+    types: [opened, labeled]
+  pull_request:
+    types: [opened, synchronize]
+  workflow_dispatch:
+
+jobs:
+  claude-prompt-helper:
+    runs-on: ubuntu-latest
+    if: contains(github.event.issue.labels.*.name, 'claude-ai') || github.event_name == 'pull_request'
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Generate Claude Prompt
+        id: generate-prompt
+        run: |
+          echo "Generating Claude AI prompt based on context..."
+
+          # Determine prompt type based on labels or PR context
+          if [[ "${{ github.event_name }}" == "pull_request" ]]; then
+            PROMPT_TYPE="code-review"
+          elif [[ "${{ contains(github.event.issue.labels.*.name, 'debugging') }}" == "true" ]]; then
+            PROMPT_TYPE="debugging"
+          elif [[ "${{ contains(github.event.issue.labels.*.name, 'architecture') }}" == "true" ]]; then
+            PROMPT_TYPE="architecture"
+          else
+            PROMPT_TYPE="code-review"
+          fi
+
+          echo "prompt-type=$PROMPT_TYPE" >> $GITHUB_OUTPUT
+
+      - name: Comment with Claude Prompt
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const promptType = '${{ steps.generate-prompt.outputs.prompt-type }}';
+            const fs = require('fs');
+
+            let promptFile = '';
+            let promptContent = '';
+
+            try {
+              if (promptType === 'code-review') {
+                promptFile = '.github/prompts/code-review/comprehensive-review.md';
+              } else if (promptType === 'debugging') {
+                promptFile = '.github/prompts/development/debugging.md';
+              } else if (promptType === 'architecture') {
+                promptFile = '.github/prompts/architecture/system-design.md';
+              }
+
+              if (fs.existsSync(promptFile)) {
+                promptContent = fs.readFileSync(promptFile, 'utf8');
+              } else {
+                promptContent = 'Prompt file not found. Please check the .github/prompts directory.';
+              }
+            } catch (error) {
+              promptContent = `Error reading prompt file: ${error.message}`;
+            }
+
+            const body = `🤖 **Claude AI Assistant Ready**
+
+**Prompt Type:** ${promptType}
+
+**How to use:**
+1. Copy the prompt below
+2. Paste it into your Claude AI conversation
+3. Provide the relevant code or context
+4. Get comprehensive AI assistance
+
+**Claude Prompt:**
+\`\`\`
+${promptContent}
+\`\`\`
+
+---
+*This prompt was automatically generated based on the issue labels or PR context.*`;
+
+            if (context.eventName === 'pull_request') {
+              github.rest.issues.createComment({
+                issue_number: context.issue.number,
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                body: body
+              });
+            } else if (context.eventName === 'issues') {
+              github.rest.issues.createComment({
+                issue_number: context.payload.issue.number,
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                body: body
+              });
+            }

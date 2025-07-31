@@ -1,0 +1,53 @@
+name: Validate Claude Prompts
+
+on:
+  push:
+    paths:
+      - '.github/prompts/**'
+  pull_request:
+    paths:
+      - '.github/prompts/**'
+
+jobs:
+  validate-prompts:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Validate Prompt Structure
+        run: |
+          echo "Validating Claude AI prompt structure..."
+
+          # Check for required directories
+          required_dirs=("code-review" "development" "architecture" "optimization" "testing" "generation" "legacy" "api")
+
+          for dir in "${required_dirs[@]}"; do
+            if [[ ! -d ".github/prompts/$dir" ]]; then
+              echo "❌ Missing required directory: .github/prompts/$dir"
+              exit 1
+            else
+              echo "✅ Found directory: .github/prompts/$dir"
+            fi
+          done
+
+          # Check for prompt library YAML
+          if [[ ! -f ".github/prompts/prompt-library.yml" ]]; then
+            echo "❌ Missing prompt-library.yml"
+            exit 1
+          else
+            echo "✅ Found prompt-library.yml"
+          fi
+
+          # Validate markdown files
+          find .github/prompts -name "*.md" -type f | while read -r file; do
+            if [[ ! -s "$file" ]]; then
+              echo "❌ Empty prompt file: $file"
+              exit 1
+            else
+              echo "✅ Validated: $file"
+            fi
+          done
+
+          echo "🎉 All prompt validations passed!"
