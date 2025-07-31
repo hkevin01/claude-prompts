@@ -11,13 +11,13 @@ def validate_prompts():
     """Basic validation of prompt files"""
     base_path = Path(".")
     errors = []
-    
+
     # Check for basic structure
     prompt_dirs = [
         base_path / "src" / "prompts",
         base_path / "prompts"
     ]
-    
+
     prompt_count = 0
     for prompt_dir in prompt_dirs:
         if prompt_dir.exists():
@@ -30,9 +30,9 @@ def validate_prompts():
                         prompt_count += 1
                     except Exception as e:
                         errors.append(f"{prompt_file}: Error reading: {e}")
-    
+
     print(f"Validated {prompt_count} prompt files")
-    
+
     if errors:
         print("Errors found:")
         for error in errors:

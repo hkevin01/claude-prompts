@@ -11,12 +11,12 @@ def check_links():
     """Check for broken links"""
     base_path = Path(".")
     errors = []
-    
+
     # Find all markdown files
     md_files = list(base_path.rglob("*.md"))
-    
+
     print(f"Checking {len(md_files)} markdown files for links...")
-    
+
     # For now, just do basic validation
     for md_file in md_files:
         try:
@@ -26,7 +26,7 @@ def check_links():
                 errors.append(f"{md_file}: Contains broken link placeholder")
         except Exception:
             errors.append(f"{md_file}: Could not read file")
-    
+
     if errors:
         print("Link errors found:")
         for error in errors:
