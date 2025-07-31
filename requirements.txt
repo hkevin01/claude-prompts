@@ -1,22 +1,43 @@
 # Python dependencies for Claude Prompts Collection
-# Validation and automation tools
+# Modern validation and automation tools
 
-# YAML processing
-PyYAML>=6.0.1
+# YAML processing - Latest stable
+PyYAML>=6.0.2
 
-# Markdown processing
-markdown>=3.5.1
-python-markdown>=3.5.1
+# Markdown processing - Updated
+markdown>=3.7.0
+python-markdown>=3.7.0
 
-# Link checking
-requests>=2.31.0
-beautifulsoup4>=4.12.2
+# HTTP requests with security features
+requests>=2.32.3
+beautifulsoup4>=4.12.3
 
-# JSON schema validation
-jsonschema>=4.19.1
+# JSON schema validation - Latest
+jsonschema>=4.23.0
 
-# File system operations
-pathlib2>=2.3.7
+# File system operations - Python 3.11+ has built-in pathlib
+# pathlib2>=2.3.7  # Removed - not needed for Python 3.11+
+
+# Development and testing tools
+pytest>=8.3.2
+pytest-cov>=5.0.0
+pytest-asyncio>=0.24.0
+hypothesis>=6.112.0
+
+# Code quality and security
+black>=24.8.0
+isort>=5.13.2
+flake8>=7.1.1
+mypy>=1.11.2
+bandit>=1.7.9
+
+# Performance and monitoring
+psutil>=6.0.0
+rich>=13.8.0
+
+# Async HTTP client for better performance
+aiohttp>=3.10.5
+aiofiles>=24.1.0
 
 # Testing framework
 pytest>=7.4.3
