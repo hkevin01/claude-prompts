@@ -4,7 +4,7 @@ This file serves as an index of all prompts in the collection, organized by cate
 
 ## 📊 Quick Stats
 
-- **Total Prompts**: 6 (examples)
+- **Total Prompts**: 11
 - **Categories**: 6
 - **Last Updated**: July 31, 2025
 
@@ -13,12 +13,15 @@ This file serves as an index of all prompts in the collection, organized by cate
 ### 💻 Coding
 | Prompt | Difficulty | Tags | Description |
 |--------|-----------|------|-------------|
-| [Code Review Assistant](prompts/coding/code-review-assistant.md) | Intermediate | `code-review`, `quality`, `feedback` | Comprehensive code review with suggestions |
+| [Code Review Assistant](src/prompts/coding/code-review-assistant.md) | Intermediate | `code-review`, `quality`, `feedback` | Comprehensive code review with suggestions |
+| [Simple POC Development](src/prompts/coding/simple-poc-development.md) | Beginner | `prototyping`, `poc`, `simple-development` | Guide for creating simple proof-of-concept code |
+| [Repository Cleanup](src/prompts/coding/repository-cleanup.md) | Intermediate | `cleanup`, `organization`, `project-structure` | Comprehensive repository organization and cleanup |
+| [Comprehensive Testing](src/prompts/coding/comprehensive-testing.md) | Intermediate | `testing`, `quality-assurance`, `validation` | Generate tests that verify code matches documentation |
 
 ### 🎨 Creative
 | Prompt | Difficulty | Tags | Description |
 |--------|-----------|------|-------------|
-| [Story Generator](prompts/creative/story-generator.md) | Beginner | `creative-writing`, `storytelling`, `fiction` | Generate engaging stories from basic prompts |
+| [Story Generator](src/prompts/creative/story-generator.md) | Beginner | `creative-writing`, `storytelling`, `fiction` | Generate engaging stories from basic prompts |
 
 ### 📊 Analysis
 | Prompt | Difficulty | Tags | Description |
@@ -28,7 +31,8 @@ This file serves as an index of all prompts in the collection, organized by cate
 ### 💼 Business
 | Prompt | Difficulty | Tags | Description |
 |--------|-----------|------|-------------|
-| [Email Composer](prompts/business/email-composer.md) | Beginner | `email`, `communication`, `professional` | Craft professional emails for various purposes |
+| [Email Composer](src/prompts/business/email-composer.md) | Beginner | `email`, `communication`, `professional` | Craft professional emails for various purposes |
+| [Iterative Improvement](src/prompts/business/iterative-improvement.md) | Intermediate | `project-management`, `continuous-improvement`, `iteration` | Systematic approach to project improvement |
 
 ### 🎓 Educational
 | Prompt | Difficulty | Tags | Description |
@@ -38,7 +42,9 @@ This file serves as an index of all prompts in the collection, organized by cate
 ### 🔧 Personal
 | Prompt | Difficulty | Tags | Description |
 |--------|-----------|------|-------------|
-| [Task Prioritizer](prompts/personal/task-prioritizer.md) | Beginner | `productivity`, `planning`, `organization` | Prioritize tasks based on importance and urgency |
+| [Task Prioritizer](src/prompts/personal/task-prioritizer.md) | Beginner | `productivity`, `planning`, `organization` | Prioritize tasks based on importance and urgency |
+| [Beast Mode Development](src/prompts/personal/beast-mode-development.md) | Advanced | `productivity`, `workflow`, `autonomous-development` | Comprehensive autonomous development workflow |
+| [Project Focus Guide](src/prompts/personal/project-focus-guide.md) | Beginner | `focus`, `context`, `project-management` | Create focused context guides for AI assistants |
 
 ## 🏷️ By Tags
 
@@ -73,17 +79,22 @@ This file serves as an index of all prompts in the collection, organized by cate
 
 ## 🎯 By Difficulty
 
-### Beginner (3 prompts)
+### Beginner (5 prompts)
 - Story Generator
 - Email Composer
 - Task Prioritizer
+- Simple POC Development
+- Project Focus Guide
 
-### Intermediate (2 prompts)
+### Intermediate (5 prompts)
 - Code Review Assistant
+- Repository Cleanup
+- Comprehensive Testing
 - Concept Explainer
+- Iterative Improvement
 
 ### Advanced (1 prompt)
-- Data Insights
+- Beast Mode Development
 
 ## 🔍 Search Guide
 
@@ -104,7 +115,12 @@ To find prompts:
 3. Code Review Assistant
 
 ### Recently Added
-- All example prompts (July 31, 2025)
+- Beast Mode Development Workflow (July 31, 2025)
+- Simple POC Development Guide (July 31, 2025)
+- Repository Cleanup and Organization (July 31, 2025)
+- Comprehensive Testing Strategy (July 31, 2025)
+- Project Focus and Context Guide (July 31, 2025)
+- Iterative Project Improvement (July 31, 2025)
 
 ---
 
