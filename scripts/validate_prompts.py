@@ -86,17 +86,25 @@ class PromptValidator:
 
             # Validate category
             if "category" in frontmatter:
-                valid_cats = self.schema.get("categories", [])
-                if frontmatter["category"] not in valid_cats:
+                category_enum = (
+                    self.schema.get("properties", {})
+                    .get("category", {})
+                    .get("enum", [])
+                )
+                if frontmatter["category"] not in category_enum:
                     cat = frontmatter['category']
                     msg = f"{file_path}: Invalid category '{cat}'"
                     self.errors.append(msg)
 
             # Validate difficulty
             if "difficulty" in frontmatter:
-                valid_diffs = self.schema.get("difficulties", [])
-                if frontmatter["difficulty"] not in valid_diffs:
-                    diff = frontmatter['difficulty']
+                difficulty_enum = (
+                    self.schema.get("properties", {})
+                    .get("difficulty", {})
+                    .get("enum", [])
+                )
+                diff = frontmatter["difficulty"]
+                if diff not in difficulty_enum:
                     msg = f"{file_path}: Invalid difficulty '{diff}'"
                     self.errors.append(msg)
 
