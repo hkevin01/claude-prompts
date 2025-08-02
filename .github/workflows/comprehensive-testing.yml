@@ -1,0 +1,172 @@
+name: Comprehensive Testing and Quality Assurance
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main ]
+  schedule:
+    - cron: '0 2 * * 1'  # Weekly on Mondays at 2 AM
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ['3.11', '3.12']
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+    
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v5
+      with:
+        python-version: ${{ matrix.python-version }}
+    
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+        pip install pytest pytest-cov hypothesis
+    
+    - name: Run unit tests
+      run: |
+        pytest tests/ --cov=scripts --cov-report=xml
+    
+    - name: Upload coverage to Codecov
+      uses: codecov/codecov-action@v4
+      with:
+        file: ./coverage.xml
+        flags: unittests
+        name: codecov-umbrella
+
+  lint-and-format:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+    
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.11'
+    
+    - name: Install linting tools
+      run: |
+        python -m pip install --upgrade pip
+        pip install black isort flake8 mypy bandit safety
+        pip install -r requirements.txt
+    
+    - name: Check code formatting with Black
+      run: black --check .
+    
+    - name: Check import sorting with isort
+      run: isort --check-only .
+    
+    - name: Lint with flake8
+      run: flake8
+    
+    - name: Type check with mypy
+      run: mypy scripts/ || true  # Allow to fail for now
+    
+    - name: Security check with bandit
+      run: bandit -r scripts/
+    
+    - name: Dependency security check
+      run: safety check
+
+  validate-prompts:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+    
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.11'
+    
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+    
+    - name: Validate all prompts
+      run: python scripts/validate_prompts.py
+    
+    - name: Check links in prompts
+      run: python scripts/async_link_checker.py
+    
+    - name: Generate and validate catalog
+      run: |
+        python scripts/generate_catalog.py
+        git diff --exit-code CATALOG.md || echo "Catalog updated"
+
+  documentation:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+    
+    - name: Set up Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+    
+    - name: Install markdown tools
+      run: |
+        npm install -g markdownlint-cli prettier
+    
+    - name: Lint markdown files
+      run: markdownlint **/*.md
+    
+    - name: Check markdown formatting
+      run: prettier --check **/*.md
+
+  integration-test:
+    runs-on: ubuntu-latest
+    needs: [test, lint-and-format, validate-prompts]
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+    
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.11'
+    
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+        pip install pytest
+    
+    - name: Run integration tests
+      run: pytest tests/ -m integration
+
+  performance-test:
+    runs-on: ubuntu-latest
+    needs: [test]
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+    
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.11'
+    
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+        pip install pytest pytest-benchmark
+    
+    - name: Run performance tests
+      run: pytest tests/ -m slow --benchmark-only

@@ -1,0 +1,189 @@
+{
+  "name": "claude-prompts",
+  "displayName": "Claude Prompts Collection",
+  "description": "Professional Claude AI prompts for developers - instant access to expert-crafted prompts right in VS Code",
+  "version": "1.0.0",
+  "publisher": "claude-prompts-collection",
+  "icon": "icon.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hkevin01/claude-prompts"
+  },
+  "engines": {
+    "vscode": "^1.90.0"
+  },
+  "categories": [
+    "Other",
+    "Snippets",
+    "Education"
+  ],
+  "keywords": [
+    "claude",
+    "ai",
+    "prompts",
+    "assistant",
+    "productivity",
+    "development",
+    "copilot"
+  ],
+  "activationEvents": [],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "claude-prompts.showPrompts",
+        "title": "Show Claude Prompts",
+        "category": "Claude Prompts",
+        "icon": "$(book)"
+      },
+      {
+        "command": "claude-prompts.insertPrompt",
+        "title": "Insert Prompt",
+        "category": "Claude Prompts",
+        "icon": "$(add)"
+      },
+      {
+        "command": "claude-prompts.searchPrompts",
+        "title": "Search Prompts",
+        "category": "Claude Prompts",
+        "icon": "$(search)"
+      },
+      {
+        "command": "claude-prompts.refreshPrompts",
+        "title": "Refresh Prompts",
+        "category": "Claude Prompts",
+        "icon": "$(refresh)"
+      },
+      {
+        "command": "claude-prompts.openPromptFile",
+        "title": "Open Prompt File",
+        "category": "Claude Prompts"
+      }
+    ],
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "claude-prompts",
+          "title": "Claude Prompts",
+          "icon": "$(book)"
+        }
+      ]
+    },
+    "views": {
+      "claude-prompts": [
+        {
+          "id": "promptsExplorer",
+          "name": "Prompts Explorer",
+          "when": "true",
+          "icon": "$(book)"
+        },
+        {
+          "id": "promptsSearch",
+          "name": "Search Results",
+          "when": "claude-prompts.hasSearchResults",
+          "icon": "$(search)"
+        }
+      ]
+    },
+    "menus": {
+      "view/title": [
+        {
+          "command": "claude-prompts.refreshPrompts",
+          "when": "view == promptsExplorer",
+          "group": "navigation"
+        },
+        {
+          "command": "claude-prompts.searchPrompts",
+          "when": "view == promptsExplorer",
+          "group": "navigation"
+        }
+      ],
+      "view/item/context": [
+        {
+          "command": "claude-prompts.insertPrompt",
+          "when": "view == promptsExplorer && viewItem == prompt",
+          "group": "inline"
+        },
+        {
+          "command": "claude-prompts.openPromptFile",
+          "when": "view == promptsExplorer && viewItem == prompt",
+          "group": "navigation"
+        }
+      ],
+      "commandPalette": [
+        {
+          "command": "claude-prompts.showPrompts",
+          "when": "true"
+        },
+        {
+          "command": "claude-prompts.insertPrompt",
+          "when": "true"
+        },
+        {
+          "command": "claude-prompts.searchPrompts",
+          "when": "true"
+        }
+      ]
+    },
+    "keybindings": [
+      {
+        "command": "claude-prompts.showPrompts",
+        "key": "ctrl+shift+p ctrl+shift+c",
+        "mac": "cmd+shift+p cmd+shift+c"
+      },
+      {
+        "command": "claude-prompts.searchPrompts",
+        "key": "ctrl+shift+f ctrl+shift+c",
+        "mac": "cmd+shift+f cmd+shift+c"
+      }
+    ],
+    "configuration": {
+      "title": "Claude Prompts",
+      "properties": {
+        "claude-prompts.autoInsert": {
+          "type": "boolean",
+          "default": true,
+          "description": "Automatically insert prompt text when selected"
+        },
+        "claude-prompts.showPreview": {
+          "type": "boolean",
+          "default": true,
+          "description": "Show prompt preview in sidebar"
+        },
+        "claude-prompts.defaultCategory": {
+          "type": "string",
+          "default": "coding",
+          "enum": [
+            "coding",
+            "creative",
+            "business",
+            "analysis",
+            "educational",
+            "personal"
+          ],
+          "description": "Default category to display"
+        },
+        "claude-prompts.customPromptsPath": {
+          "type": "string",
+          "default": "",
+          "description": "Path to custom prompts directory"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./"
+  },
+  "devDependencies": {
+    "@types/js-yaml": "^4.0.9",
+    "@types/node": "^20.0.0",
+    "@types/vscode": "^1.90.0",
+    "typescript": "^5.4.0"
+  },
+  "dependencies": {
+    "fuse.js": "^7.0.0",
+    "js-yaml": "^4.1.0"
+  }
+}
