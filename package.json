@@ -3,19 +3,31 @@
   "displayName": "Claude Prompts Collection",
   "description": "Professional Claude AI prompts for developers - instant access to expert-crafted prompts right in VS Code",
   "version": "1.0.0",
-  "publisher": "claude-prompts-collection",
-  "icon": "icon.png",
+  "publisher": "hkevin01",
+  "license": "MIT",
+  "pricing": "Free",
+  "icon": "images/icon.png",
+  "galleryBanner": {
+    "color": "#1a1a1a",
+    "theme": "dark"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/hkevin01/claude-prompts"
   },
+  "bugs": {
+    "url": "https://github.com/hkevin01/claude-prompts/issues"
+  },
+  "homepage": "https://github.com/hkevin01/claude-prompts#readme",
   "engines": {
     "vscode": "^1.90.0"
   },
   "categories": [
-    "Other",
+    "Programming Languages",
     "Snippets",
-    "Education"
+    "Education",
+    "Machine Learning",
+    "Other"
   ],
   "keywords": [
     "claude",
@@ -24,7 +36,15 @@
     "assistant",
     "productivity",
     "development",
-    "copilot"
+    "copilot",
+    "code-generation",
+    "code-review",
+    "testing",
+    "documentation",
+    "optimization",
+    "architecture",
+    "best-practices",
+    "automation"
   ],
   "activationEvents": [],
   "main": "./out/extension.js",

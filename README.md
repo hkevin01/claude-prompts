@@ -1,10 +1,15 @@
-# Claude Prompts Collection - VS Code Extension
+# Claude Prompts Collection
 
-> 🚀 **Professional Claude AI prompts for developers** - Instant access to expert-crafted prompts
-> right in VS Code!
+![Claude Prompts Extension Icon](images/icon.png)
 
-[![VS Code Extension](https://img.shields.io/badge/VS%20Code-Extension-blue)](https://marketplace.visualstudio.com/items?itemName=claude-prompts-collection.claude-prompts)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+Professional Claude AI Prompts for Developers - instant access to expert-crafted prompts right in VS Code!
+
+[![Version](https://img.shields.io/visual-studio-marketplace/v/hkevin01.claude-prompts)](https://marketplace.visualstudio.com/items?itemName=hkevin01.claude-prompts)
+[![Installs](https://img.shields.io/visual-studio-marketplace/i/hkevin01.claude-prompts)](https://marketplace.visualstudio.com/items?itemName=hkevin01.claude-prompts)
+[![Rating](https://img.shields.io/visual-studio-marketplace/r/hkevin01.claude-prompts)](https://marketplace.visualstudio.com/items?itemName=hkevin01.claude-prompts)
+[![License](https://img.shields.io/github/license/hkevin01/claude-prompts)](https://github.com/hkevin01/claude-prompts/blob/main/LICENSE)
+
+🚀 **Boost your development workflow with professionally curated Claude AI prompts**
 
 ## ✨ Features
 
