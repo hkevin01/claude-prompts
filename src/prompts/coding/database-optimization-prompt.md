@@ -1,15 +1,13 @@
 ---
 title: "Database Optimization Prompt"
 category: "coding"
-tags: ['optimization', 'performance', 'database']
+tags: ['database', 'performance', 'optimization']
 difficulty: "advanced"
 description: "Professional optimization assistant for database optimization prompt"
 author: "Claude Prompts Collection"
 date: "2025-08-02"
 version: "1.1"
 ---
-
-# Database Optimization Prompt
 
 ## Description
 

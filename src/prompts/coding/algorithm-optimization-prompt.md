@@ -1,15 +1,13 @@
 ---
 title: "Algorithm Optimization Prompt"
 category: "coding"
-tags: ['optimization', 'performance', 'testing', 'database']
+tags: ['database', 'testing', 'performance', 'optimization']
 difficulty: "advanced"
 description: "Professional optimization assistant for algorithm optimization prompt"
 author: "Claude Prompts Collection"
 date: "2025-08-02"
 version: "1.1"
 ---
-
-# Algorithm Optimization Prompt
 
 ## Description
 

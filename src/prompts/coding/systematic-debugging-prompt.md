@@ -1,15 +1,13 @@
 ---
 title: "Systematic Debugging Prompt"
 category: "coding"
-tags: ['development', 'architecture', 'deployment', 'testing', 'debugging']
+tags: ['development', 'debugging', 'deployment', 'testing', 'architecture']
 difficulty: "intermediate"
 description: "Professional development assistant for systematic debugging prompt"
 author: "Claude Prompts Collection"
 date: "2025-08-02"
 version: "1.1"
 ---
-
-# Systematic Debugging Prompt
 
 ## Description
 

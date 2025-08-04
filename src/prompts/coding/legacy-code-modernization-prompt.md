@@ -1,15 +1,13 @@
 ---
 title: "Legacy Code Modernization Prompt"
 category: "coding"
-tags: ['legacy', 'documentation', 'architecture', 'testing', 'refactoring', 'api']
+tags: ['legacy', 'refactoring', 'security', 'api', 'testing', 'performance']
 difficulty: "advanced"
 description: "Professional legacy assistant for legacy code modernization prompt"
 author: "Claude Prompts Collection"
 date: "2025-08-02"
 version: "1.1"
 ---
-
-# Legacy Code Modernization Prompt
 
 ## Description
 

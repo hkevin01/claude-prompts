@@ -1,15 +1,13 @@
 ---
 title: "Test-Driven Development Prompt"
 category: "coding"
-tags: ['deployment', 'debugging', 'refactoring', 'testing', 'security', 'performance']
+tags: ['refactoring', 'debugging', 'security', 'deployment', 'testing', 'performance']
 difficulty: "advanced"
 description: "Professional testing assistant for test-driven development prompt"
 author: "Claude Prompts Collection"
 date: "2025-08-02"
 version: "1.1"
 ---
-
-# Test-Driven Development Prompt
 
 ## Description
 

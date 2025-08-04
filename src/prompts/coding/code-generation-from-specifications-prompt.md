@@ -1,15 +1,13 @@
 ---
 title: "Code Generation from Specifications Prompt"
 category: "coding"
-tags: ['documentation', 'deployment', 'testing', 'api', 'generation', 'security']
+tags: ['generation', 'security', 'deployment', 'api', 'testing', 'database']
 difficulty: "intermediate"
 description: "Professional generation assistant for code generation from specifications prompt"
 author: "Claude Prompts Collection"
 date: "2025-08-02"
 version: "1.1"
 ---
-
-# Code Generation from Specifications Prompt
 
 ## Description
 

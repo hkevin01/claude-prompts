@@ -8,16 +8,37 @@
 
 ## ✨ Features
 
-- **33+ Professional Prompts**: Carefully crafted prompts for coding, architecture, testing, and
-  more
+- **50+ Professional Prompts**: Expert-crafted prompts with comprehensive coding assistance
 - **Smart Search**: Quickly find prompts by title, tags, or description
-- **Category Organization**: Browse prompts by coding, creative, business, analysis, educational,
-  and personal categories
+- **Category Organization**: Browse prompts by development, architecture, testing, and more
 - **Instant Insert**: Click to insert prompts directly into your active editor
 - **Difficulty Indicators**: Color-coded difficulty levels (🟢 Beginner, 🟡 Intermediate, 🔴
   Advanced)
 - **Rich Preview**: View prompt details before using them
 - **Custom Prompts**: Add your own prompt collections
+
+## 🎯 Available Prompts
+
+### 💻 Development & Architecture
+- **System Architecture**: Microservices design, system architecture planning
+- **API Development**: REST API and GraphQL API design
+- **Code Generation**: API implementation, specification to code conversion
+- **Refactoring**: Code modernization and cleanup strategies
+- **Debugging**: Systematic debugging approaches
+
+### 🔍 Code Review & Quality
+- **Security Review**: Security-focused code analysis
+- **Performance Review**: Performance optimization analysis
+- **Comprehensive Review**: Complete code quality assessment
+- **Legacy Code**: Modernization and dependency upgrades
+- **Best Practices**: Coding standards and patterns
+
+### ⚡ Optimization & Testing
+- **Database Optimization**: Query and schema optimization
+- **Algorithm Optimization**: Performance improvements
+- **Test Automation**: Testing strategy and implementation
+- **TDD Development**: Test-driven development guidance
+- **Quality Assurance**: Comprehensive testing approaches
 
 ## 🎯 Available Prompt Categories
 

@@ -1,15 +1,13 @@
 ---
 title: "REST API Development Prompt"
 category: "coding"
-tags: ['architecture', 'documentation', 'testing', 'api', 'performance', 'security']
+tags: ['security', 'api', 'testing', 'performance', 'database', 'documentation']
 difficulty: "advanced"
 description: "Professional api assistant for rest api development prompt"
 author: "Claude Prompts Collection"
 date: "2025-08-02"
 version: "1.1"
 ---
-
-# REST API Development Prompt
 
 ## Description
 

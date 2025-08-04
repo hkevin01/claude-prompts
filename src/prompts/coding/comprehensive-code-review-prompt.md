@@ -1,15 +1,13 @@
 ---
 title: "Comprehensive Code Review Prompt"
 category: "coding"
-tags: ['code review', 'architecture', 'documentation', 'testing', 'refactoring', 'database']
+tags: ['refactoring', 'security', 'testing', 'performance', 'database', 'documentation']
 difficulty: "advanced"
 description: "Professional code review assistant for comprehensive code review prompt"
 author: "Claude Prompts Collection"
 date: "2025-08-02"
 version: "1.1"
 ---
-
-# Comprehensive Code Review Prompt
 
 ## Description
 

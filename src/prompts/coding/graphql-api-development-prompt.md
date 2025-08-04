@@ -1,15 +1,13 @@
 ---
 title: "GraphQL API Development Prompt"
 category: "coding"
-tags: ['architecture', 'api', 'performance', 'security', 'database']
+tags: ['security', 'api', 'performance', 'database', 'architecture']
 difficulty: "advanced"
 description: "Professional api assistant for graphql api development prompt"
 author: "Claude Prompts Collection"
 date: "2025-08-02"
 version: "1.1"
 ---
-
-# GraphQL API Development Prompt
 
 ## Description
 

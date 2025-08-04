@@ -1,15 +1,13 @@
 ---
 title: "Microservices Architecture Prompt"
 category: "coding"
-tags: ['api', 'database', 'architecture', 'deployment']
+tags: ['api', 'architecture', 'database', 'deployment']
 difficulty: "advanced"
 description: "Professional architecture assistant for microservices architecture prompt"
 author: "Claude Prompts Collection"
 date: "2025-08-02"
 version: "1.1"
 ---
-
-# Microservices Architecture Prompt
 
 ## Description
 

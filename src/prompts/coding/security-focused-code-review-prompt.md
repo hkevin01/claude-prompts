@@ -1,15 +1,13 @@
 ---
 title: "Security-Focused Code Review Prompt"
 category: "coding"
-tags: ['code review', 'deployment', 'api', 'security', 'database']
+tags: ['security', 'deployment', 'api', 'database', 'code review']
 difficulty: "intermediate"
 description: "Professional code review assistant for security-focused code review prompt"
 author: "Claude Prompts Collection"
 date: "2025-08-02"
 version: "1.1"
 ---
-
-# Security-Focused Code Review Prompt
 
 ## Description
 

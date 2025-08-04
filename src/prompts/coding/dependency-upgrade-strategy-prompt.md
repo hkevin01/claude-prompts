@@ -1,15 +1,13 @@
 ---
 title: "Dependency Upgrade Strategy Prompt"
 category: "coding"
-tags: ['security', 'testing', 'legacy']
+tags: ['testing', 'security', 'legacy']
 difficulty: "intermediate"
 description: "Professional legacy assistant for dependency upgrade strategy prompt"
 author: "Claude Prompts Collection"
 date: "2025-08-02"
 version: "1.1"
 ---
-
-# Dependency Upgrade Strategy Prompt
 
 ## Description
 

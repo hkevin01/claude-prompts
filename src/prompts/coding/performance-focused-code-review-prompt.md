@@ -1,15 +1,13 @@
 ---
 title: "Performance-Focused Code Review Prompt"
 category: "coding"
-tags: ['performance', 'code review', 'database']
+tags: ['performance', 'database', 'code review']
 difficulty: "advanced"
 description: "Professional code review assistant for performance-focused code review prompt"
 author: "Claude Prompts Collection"
 date: "2025-08-02"
 version: "1.1"
 ---
-
-# Performance-Focused Code Review Prompt
 
 ## Description
 

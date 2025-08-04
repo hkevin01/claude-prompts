@@ -1,15 +1,13 @@
 ---
 title: "API Code Generation Prompt"
 category: "coding"
-tags: ['documentation', 'testing', 'api', 'generation', 'security', 'database']
+tags: ['generation', 'security', 'api', 'testing', 'database', 'documentation']
 difficulty: "intermediate"
 description: "Professional generation assistant for api code generation prompt"
 author: "Claude Prompts Collection"
 date: "2025-08-02"
 version: "1.1"
 ---
-
-# API Code Generation Prompt
 
 ## Description
 

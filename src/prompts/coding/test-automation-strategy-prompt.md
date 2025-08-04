@@ -1,15 +1,13 @@
 ---
 title: "Test Automation Strategy Prompt"
 category: "coding"
-tags: ['architecture', 'deployment', 'testing', 'api', 'security', 'performance']
+tags: ['security', 'deployment', 'api', 'testing', 'performance', 'architecture']
 difficulty: "advanced"
 description: "Professional testing assistant for test automation strategy prompt"
 author: "Claude Prompts Collection"
 date: "2025-08-02"
 version: "1.1"
 ---
-
-# Test Automation Strategy Prompt
 
 ## Description
 

@@ -1,15 +1,13 @@
 ---
 title: "System Architecture Design Prompt"
 category: "coding"
-tags: ['architecture', 'documentation', 'deployment', 'testing', 'api', 'performance']
+tags: ['performance', 'security', 'deployment', 'api', 'testing', 'architecture']
 difficulty: "advanced"
 description: "Professional architecture assistant for system architecture design prompt"
 author: "Claude Prompts Collection"
 date: "2025-08-02"
 version: "1.1"
 ---
-
-# System Architecture Design Prompt
 
 ## Description
 
