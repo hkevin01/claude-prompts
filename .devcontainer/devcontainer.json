@@ -1,0 +1,27 @@
+{
+  "name": "Claude Prompts Development",
+  "dockerFile": "Dockerfile",
+  "settings": {
+    "terminal.integrated.shell.linux": "/bin/bash",
+    "python.defaultInterpreterPath": "/usr/local/bin/python",
+    "python.linting.enabled": true,
+    "python.linting.pylintEnabled": true,
+    "editor.formatOnSave": true
+  },
+  "extensions": [
+    "ms-python.python",
+    "ms-python.vscode-pylance",
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "davidanson.vscode-markdownlint",
+    "redhat.vscode-yaml",
+    "github.vscode-github-actions"
+  ],
+  "forwardPorts": [],
+  "postCreateCommand": "npm install && pip install -r requirements.txt",
+  "remoteUser": "node",
+  "features": {
+    "github-cli": "latest",
+    "docker-from-docker": "latest"
+  }
+}
