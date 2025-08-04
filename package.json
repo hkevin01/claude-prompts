@@ -180,6 +180,7 @@
     "@types/js-yaml": "^4.0.9",
     "@types/node": "^20.0.0",
     "@types/vscode": "^1.90.0",
+    "markdownlint-cli": "^0.45.0",
     "typescript": "^5.4.0"
   },
   "dependencies": {
