@@ -14,8 +14,7 @@ def generate_catalog():
 
     # Find all prompt files
     prompt_dirs = [
-        base_path / "src" / "prompts",
-        base_path / "prompts"
+        base_path / "src" / "prompts"
     ]
 
     prompts = []

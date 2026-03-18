@@ -262,7 +262,6 @@ MIT License - see [LICENSE](LICENSE) for details.
 
 - **Issues**: [GitHub Issues](https://github.com/hkevin01/claude-prompts/issues)
 - **Discussions**: [GitHub Discussions](https://github.com/hkevin01/claude-prompts/discussions)
-- **Email**: [Support](mailto:support@claude-prompts.dev)
 
 ## 🌟 Acknowledgments
 
@@ -286,7 +285,7 @@ Each prompt file follows a standardized format:
 
 ## 📝 Quick Start
 
-1. Browse prompts by category in the `prompts/` directory
+1. Browse prompts by category in the `src/prompts/` directory
 2. Copy the prompt content you need
 3. Customize variables (marked with `{variable}`) for your use case
 4. Use with Claude for best results
@@ -301,7 +300,7 @@ Each prompt file follows a standardized format:
 
 When adding new prompts:
 
-1. Use the template in `templates/prompt-template.md`
+1. Use the template in `src/templates/prompt-template.md`
 2. Include proper metadata and tags
 3. Test the prompt before adding
 4. Follow the naming convention
