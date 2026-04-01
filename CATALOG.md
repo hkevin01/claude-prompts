@@ -4,8 +4,8 @@ Auto-generated catalog of Claude prompts.
 
 ## 📊 Quick Stats
 
-- **Total Prompts**: 29
-- **Last Updated**: 2026-03-18
+- **Total Prompts**: 30
+- **Last Updated**: 2026-04-01
 
 ## 📋 All Prompts
 
@@ -40,6 +40,7 @@ Auto-generated catalog of Claude prompts.
 - [Unknown](prompts/coding/security-focused-code-review-prompt.md)
 - [Unknown](prompts/coding/performance-focused-code-review-prompt.md)
 - [Unknown](prompts/coding/code-generation-from-specifications-prompt.md)
+- [Universal README Generator (EEG-RAG Style)](prompts/coding/universal-readme-generator-eeg-rag-style.md)
 
 ### Creative
 
