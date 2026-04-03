@@ -67,7 +67,7 @@ Auto-generated catalog of Claude prompts.
 - [Phased Test Strategy & Infrastructure](prompts/workflow/phased-test-strategy.md)
 - [Project Completion Audit](prompts/workflow/project-completion-audit.md)
 - [Universal Project Initialization Blueprint](prompts/workflow/universal-project-initialization.md)
-- [Universal README Generator](prompts/workflow/universal-readme-generator.md)
+- [Universal README Generator & Updater](prompts/workflow/universal-readme-generator.md)
 
 ### Priority
 
