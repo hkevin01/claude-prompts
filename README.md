@@ -4,7 +4,7 @@
 
 **Engineering-grade SDLC prompt library for GitHub Copilot and Claude**
 
-_54 battle-tested prompts built to NASA-level rigor standards — covering every phase of the software development lifecycle._
+_54 battle-tested prompts built to mission-critical engineering standards — covering every phase of the software development lifecycle._
 
 </div>
 
@@ -46,7 +46,7 @@ _54 battle-tested prompts built to NASA-level rigor standards — covering every
 
 - **Guard-first function construction** — preconditions validated before logic runs
 - **SDLC execution gates** — checkpoints that block invalid phase transitions
-- **NASA-grade rigor standards** — requirements traceability, verification evidence, failure mode analysis
+- **Mission-critical rigor standards** — requirements traceability, verification evidence, failure mode analysis
 - **Security-by-default** — least privilege, no hardcoded secrets, dependency vetting built in
 
 > [!IMPORTANT]
@@ -65,7 +65,7 @@ _54 battle-tested prompts built to NASA-level rigor standards — covering every
 |------|---------|-------------|--------|--------|
 | 🔒 | Guard-First Engineering | Every prompt enforces input validation before logic proceeds | Eliminates silent failures | ✅ Stable |
 | 🎯 | SDLC Gate Enforcement | 7-gate delivery checklist in every prompt | Catches scope/quality gaps at handoff | ✅ Stable |
-| 🧬 | NASA Rigor Standards | Requirements traceability, V&V, failure modes in all prompts | Raises output quality measurably | ✅ Stable |
+| 🧬 | Engineering Rigor Standards | Requirements traceability, V&V, failure modes in all prompts | Raises output quality measurably | ✅ Stable |
 | 🗂️ | 54-Prompt Library | Covers API dev, testing, refactoring, debugging, architecture, CI/CD | Full SDLC coverage | ✅ Stable |
 | 🔄 | Execution Orchestration | Priority prompts chain planning → execution → audit loops | Closes feedback gap in AI-assisted dev | ✅ Stable |
 | 📊 | README Automation | Universal README generator produces showcase-quality docs | Documentation bottleneck removed | ✅ Stable |
@@ -431,7 +431,7 @@ gantt
     Workflow prompts           :done,    g2, 2024-09-01, 2025-01-01
     Function construction std  :done,    g3, 2025-01-01, 2025-04-01
   section Quality
-    NASA rigor upgrade         :done,    q1, 2025-04-01, 2025-07-01
+    Engineering rigor upgrade   :done,    q1, 2025-04-01, 2025-07-01
     Guard-first enforcement    :done,    q2, 2025-07-01, 2025-10-01
     README showcase generator  :done,    q3, 2025-10-01, 2026-04-01
   section Expansion
@@ -444,7 +444,7 @@ gantt
 |-------|-------|--------|--------|
 | Foundation | Core coding prompts, SDLC gates | Q1–Q2 2024 | ✅ Complete |
 | Growth | Priority orchestration, workflow prompts | 2024–2025 | ✅ Complete |
-| Quality | NASA rigor, guard-first functions, README gen | 2025–2026 | ✅ Complete |
+| Quality | Engineering rigor, guard-first functions, README gen | 2025–2026 | ✅ Complete |
 | Expansion | CI/CD prompts, agentic workflows, test framework | 2026–2027 | 🟡 In Progress |
 
 <p align="right">(<a href="#top">back to top ↑</a>)</p>
