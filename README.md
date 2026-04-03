@@ -1,160 +1,70 @@
 # Claude Prompts Collection
 
-A focused, lightweight repository of production-ready Claude prompts.
+A software-focused prompt library for coding execution and full SDLC delivery.
 
-## Purpose
+## Scope
 
-This repository is intentionally scoped to one job: store high-quality prompts in a clean, reusable format.
+This repository is intentionally limited to engineering prompts only:
 
-- Keep prompts easy to discover.
-- Keep prompt files consistent.
-- Avoid non-essential project bloat.
+- `coding`: implementation, architecture, APIs, refactoring, testing, debugging
+- `workflow`: SDLC orchestration, phase execution, audits, operational standards
+- `priority`: project execution and progress control prompts
+
+Non-software categories are intentionally excluded.
 
 ## Repository Layout
 
 ```text
 claude-prompts/
-├── prompts/                 # Active prompt library by category
-│   ├── business/
-│   ├── coding/
-│   ├── creative/
-│   └── personal/
-├── templates/               # Authoring template for new prompts
-├── CATALOG.md               # Prompt index
-├── CHANGELOG.md             # Version history
+├── prompts/
+│   ├── coding/             # Coding and architecture prompts
+│   ├── workflow/           # SDLC and execution workflow prompts
+│   └── priority/           # Project control and planning prompts
+├── templates/              # Prompt authoring template
+├── CATALOG.md              # Prompt index
+├── CHANGELOG.md            # Version history
 └── README.md
 ```
 
+## Current Inventory
+
+- Total prompts: 54
+- Coding prompts: 42
+- Workflow prompts: 9
+- Priority prompts: 3
+
 ## Quick Start
 
-1. Open `prompts/` and choose a category.
-2. Copy the prompt you need.
-3. Replace variables/placeholders for your context.
-4. Use the prompt with Claude.
+1. Open `CATALOG.md` and select a prompt by objective.
+2. Fill prompt variables with project context (goals, stack, constraints).
+3. Run the prompt in GitHub Copilot Chat / Claude.
+4. Execute outputs phase-by-phase and collect verification evidence.
 
-## Core Features
+## Recommended SDLC Flow
 
-| Feature | Description | Why It Matters |
-|---|---|---|
-| Category Organization | Prompts grouped into business/coding/creative/personal | Faster discovery |
-| Standard Prompt Format | Prompt files use consistent frontmatter and structure | Easier maintenance and reuse |
-| Catalog Index | `CATALOG.md` provides a browsable inventory | Better navigation at scale |
-| Prompt Template | `templates/prompt-template.md` for new prompt creation | Consistent contribution quality |
+1. Start with `prompts/workflow/universal-project-initialization.md`.
+2. Build execution plan with `prompts/priority/project-plan-executor.md`.
+3. Track status using `prompts/priority/progress-tracker-plan-comparison.md`.
+4. Implement with targeted coding prompts from `prompts/coding/`.
+5. Validate quality via `prompts/workflow/phased-test-strategy.md` and `prompts/workflow/project-completion-audit.md`.
+6. Update repository docs with `prompts/workflow/universal-readme-generator.md`.
 
-## Use Cases
+## Engineering Rigor Baseline
 
-- Code review and refactoring guidance
-- Architecture and API planning
-- Testing and debugging workflows
-- Personal productivity and task planning
-- Creative ideation and drafting
+All software prompts include:
 
-## Prompt Quality Model
+- Guard-first function construction
+- Explicit setup and loop discipline rules
+- Clean return shape requirements
+- Guard-linked, actionable error messages
+- SDLC gates for scope, build, test, quality, security, docs, and release
 
-### Definition
+## Contributing
 
-Prompt quality here means clarity, applicability, and reproducibility.
-
-### Motivation
-
-Teams need prompts that are easy to adapt and produce predictable outcomes.
-
-### Step-by-Step Mechanism
-
-1. Select prompt category.
-2. Pick the closest prompt baseline.
-3. Customize variables for your context.
-4. Run with Claude.
-5. Refine and persist improvements.
-
-### Mathematical Formulation
-
-$$
-Q = w_c C + w_r R + w_s S
-$$
-
-Where:
-
-- $C$ = clarity score
-- $R$ = relevance score
-- $S$ = structure score
-- $w_*$ = weighting coefficients for your team
-
-### Implementation Detail
-
-Quality is enforced mainly through folder conventions, template usage, and review discipline.
-
-### Measured Impact
-
-Track:
-
-- Time to find a usable prompt
-- Number of edits needed before first successful output
-- Reuse rate per prompt
-
-## Prompt Taxonomy (Mindmap)
-
-```mermaid
-mindmap
-  root((Claude Prompts))
-    Coding
-      Review
-      Refactor
-      Testing
-      Architecture
-    Business
-      Communication
-      Planning
-    Creative
-      Story
-      Ideation
-    Personal
-      Prioritization
-      Focus
-```
-
-## Curation Timeline (Gantt)
-
-```mermaid
-gantt
-  title Prompt Library Maintenance
-  dateFormat  YYYY-MM-DD
-  section Maintenance
-  Prompt quality review      :active, a1, 2026-03-18, 14d
-  Prompt deduplication       :a2, 2026-03-25, 10d
-  Metadata consistency sweep :a3, 2026-04-01, 7d
-```
-
-## Dependency Notes
-
-This repository is now content-first and intentionally has no required runtime/build dependencies.
-
-| Item | Status | Reason |
-|---|---|---|
-| Node/TypeScript toolchain | Removed | Not needed for prompt-only repository |
-| Python validation/test stack | Removed | Keep repository lightweight |
-| VS Code extension source | Removed | Scope narrowed to prompt library |
-
-## Contribution
-
-1. Start with `templates/prompt-template.md`.
-2. Add new prompt under the right folder in `prompts/`.
-3. Update `CATALOG.md` if needed.
-4. Keep prompt naming clear and descriptive.
-
-## FAQ
-
-### Why is this repository minimal now?
-
-To keep focus on prompt quality and reduce maintenance overhead from unrelated tooling.
-
-### Where are active prompts stored?
-
-In `prompts/`.
-
-### Where is the template for new prompts?
-
-In `templates/prompt-template.md`.
+1. Use `templates/prompt-template.md` for new prompts.
+2. Add prompts only to `coding`, `workflow`, or `priority`.
+3. Keep prompt instructions implementation-oriented and testable.
+4. Update `CATALOG.md` for any additions, removals, or renames.
 
 ## License
 

@@ -8,7 +8,7 @@ date: "2025-07-31"
 version: "1.0"
 description: "Guidance for creating simple, direct proof-of-concept code without over-engineering"
 use_cases:
-  - "Personal projects and prototypes"
+   - "Solo projects and prototypes"
   - "Rapid feature validation"
   - "Quick solution development"
   - "Avoiding premature optimization"

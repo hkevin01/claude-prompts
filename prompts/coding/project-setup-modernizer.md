@@ -52,7 +52,7 @@ Create a clean, logical layout:
 {project_name}/
 ├── src/                    # All source code
 │   ├── components/         # Reusable components (UI projects)
-│   ├── services/           # Business logic and external integrations
+│   ├── services/           # Domain logic and external integrations
 │   ├── utils/              # Pure utility functions
 │   ├── models/             # Data models and schemas
 │   ├── routes/ or api/     # API routes / controllers
