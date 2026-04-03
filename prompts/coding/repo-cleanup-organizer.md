@@ -207,6 +207,15 @@ Use this checklist when executing the prompt. Treat every unchecked item as a de
 - Avoid hidden global state and implicit side effects.
 - Keep functions cohesive, testable, and bounded in responsibility.
 
+### Function Construction Standard
+
+- Guards first: validate preconditions at function entry and fail fast on invalid state.
+- Setup phase: initialize required local state, dependencies, and defaults before core logic.
+- Loop discipline (when needed): define loop invariants, explicit termination conditions, and max-iteration/time guards for unbounded workloads.
+- Clean returns: return one well-defined result shape per success path; avoid ambiguous or partial return values.
+- Guard-linked errors: each guard must emit a precise, actionable error message that names the failed condition and expected input/state.
+- Error taxonomy: distinguish validation errors, domain errors, and system errors with consistent codes/messages.
+
 ### Verification & Validation
 
 - Implement tests for happy path, edge cases, and failure modes.
