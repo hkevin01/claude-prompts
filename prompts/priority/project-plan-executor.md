@@ -160,3 +160,66 @@ Use this at the start of a coding session when you want Claude to autonomously e
 - Use this prompt alongside `progress-tracker-plan-comparison.md` — run the tracker weekly, run this executor per session
 - If the session runs long, add "Resume from Phase N, task X" to the {current_phase} variable
 - The Phase Gate Checklist is the most valuable part — don't skip it
+
+## Engineering Rigor Standard
+
+Use this checklist when executing the prompt. Treat every unchecked item as a delivery blocker.
+
+### Requirements Quality
+
+- Define explicit acceptance criteria before implementation.
+- Capture assumptions, constraints, and out-of-scope items.
+- Maintain bidirectional traceability: requirement -> design -> code -> test.
+- Reject ambiguous requirements; request clarification or record assumptions.
+
+### Design Quality
+
+- Document architecture decisions and rejected alternatives.
+- Specify component interfaces, contracts, and failure behaviors.
+- Define data ownership, lifecycle, and schema evolution strategy.
+- Identify safety, security, reliability, and performance risks up front.
+
+### Implementation Quality
+
+- Enforce deterministic behavior and idempotency for repeatable operations.
+- Validate all external inputs at boundaries with explicit error messages.
+- Use structured error handling with categorized failure codes.
+- Avoid hidden global state and implicit side effects.
+- Keep functions cohesive, testable, and bounded in responsibility.
+
+### Verification & Validation
+
+- Implement tests for happy path, edge cases, and failure modes.
+- Add integration tests for cross-component contracts.
+- Add regression tests for each bug fix.
+- Verify non-functional requirements: latency, throughput, memory, and resilience.
+- Record evidence of verification (commands, outputs, metrics, and artifacts).
+
+### Security & Compliance
+
+- Apply least privilege for credentials, services, and runtime permissions.
+- Never hardcode secrets; use secure env/config mechanisms.
+- Validate authn/authz paths and enforce auditability for sensitive actions.
+- Include dependency and supply-chain checks in the workflow.
+
+### SDLC Execution Gates
+
+A phase is complete only when all gates pass:
+
+- [ ] Scope gate: requirements are complete, versioned, and traceable.
+- [ ] Build gate: build is reproducible from a clean checkout.
+- [ ] Test gate: required test suites pass with evidence.
+- [ ] Quality gate: lint/static checks pass; no critical warnings unresolved.
+- [ ] Security gate: critical/high vulnerabilities addressed or risk-accepted in writing.
+- [ ] Documentation gate: README, runbooks, and change notes updated.
+- [ ] Release gate: rollback plan, monitoring hooks, and ownership are defined.
+
+### Output Requirements
+
+Every response generated from this prompt should include:
+
+1. Objective and assumptions
+2. Phased execution plan with gates
+3. Implementation details and impacted files/components
+4. Verification evidence and residual risk summary
+5. Follow-up backlog prioritized by impact and risk
