@@ -4,10 +4,10 @@ These are the **most important prompts in this collection** — the two core wor
 
 ## Use These First
 
-| Prompt | When to Use |
+| <sub>Prompt</sub> | <sub>When to Use</sub> |
 |--------|-------------|
-| [progress-tracker-plan-comparison.md](./progress-tracker-plan-comparison.md) | **Weekly** — consolidate your plan files into a live status dashboard |
-| [project-plan-executor.md](./project-plan-executor.md) | **Each session** — execute your plan phase by phase with quality gates |
+| <sub>[progress-tracker-plan-comparison.md](./progress-tracker-plan-comparison.md)</sub> | <sub>**Weekly** — consolidate your plan files into a live status dashboard</sub> |
+| <sub>[project-plan-executor.md](./project-plan-executor.md)</sub> | <sub>**Each session** — execute your plan phase by phase with quality gates</sub> |
 
 ## Workflow
 
