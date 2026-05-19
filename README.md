@@ -61,16 +61,16 @@ _54 battle-tested prompts built to mission-critical engineering standards — co
 
 ## Key Features
 
-| Icon | Feature | Description | Impact | Status |
+| <sub>Icon</sub> | <sub>Feature</sub> | <sub>Description</sub> | <sub>Impact</sub> | <sub>Status</sub> |
 |------|---------|-------------|--------|--------|
-| 🔒 | Guard-First Engineering | Every prompt enforces input validation before logic proceeds | Eliminates silent failures | ✅ Stable |
-| 🎯 | SDLC Gate Enforcement | 7-gate delivery checklist in every prompt | Catches scope/quality gaps at handoff | ✅ Stable |
-| 🧬 | Engineering Rigor Standards | Requirements traceability, V&V, failure modes in all prompts | Raises output quality measurably | ✅ Stable |
-| 🗂️ | 54-Prompt Library | Covers API dev, testing, refactoring, debugging, architecture, CI/CD | Full SDLC coverage | ✅ Stable |
-| 🔄 | Execution Orchestration | Priority prompts chain planning → execution → audit loops | Closes feedback gap in AI-assisted dev | ✅ Stable |
-| 📊 | README Automation | Universal README generator produces showcase-quality docs | Documentation bottleneck removed | ✅ Stable |
-| 🧪 | Test Strategy Coverage | TDD, BDD, unit, integration, E2E, performance prompts | Every test type explicitly covered | ✅ Stable |
-| 🛡️ | Security Code Review | OWASP Top 10, supply chain, secrets scanning baked in | Security left-shifted to design phase | ✅ Stable |
+| <sub>🔒</sub> | <sub>Guard-First Engineering</sub> | <sub>Every prompt enforces input validation before logic proceeds</sub> | <sub>Eliminates silent failures</sub> | <sub>✅ Stable</sub> |
+| <sub>🎯</sub> | <sub>SDLC Gate Enforcement</sub> | <sub>7-gate delivery checklist in every prompt</sub> | <sub>Catches scope/quality gaps at handoff</sub> | <sub>✅ Stable</sub> |
+| <sub>🧬</sub> | <sub>Engineering Rigor Standards</sub> | <sub>Requirements traceability, V&V, failure modes in all prompts</sub> | <sub>Raises output quality measurably</sub> | <sub>✅ Stable</sub> |
+| <sub>🗂️</sub> | <sub>54-Prompt Library</sub> | <sub>Covers API dev, testing, refactoring, debugging, architecture, CI/CD</sub> | <sub>Full SDLC coverage</sub> | <sub>✅ Stable</sub> |
+| <sub>🔄</sub> | <sub>Execution Orchestration</sub> | <sub>Priority prompts chain planning → execution → audit loops</sub> | <sub>Closes feedback gap in AI-assisted dev</sub> | <sub>✅ Stable</sub> |
+| <sub>📊</sub> | <sub>README Automation</sub> | <sub>Universal README generator produces showcase-quality docs</sub> | <sub>Documentation bottleneck removed</sub> | <sub>✅ Stable</sub> |
+| <sub>🧪</sub> | <sub>Test Strategy Coverage</sub> | <sub>TDD, BDD, unit, integration, E2E, performance prompts</sub> | <sub>Every test type explicitly covered</sub> | <sub>✅ Stable</sub> |
+| <sub>🛡️</sub> | <sub>Security Code Review</sub> | <sub>OWASP Top 10, supply chain, secrets scanning baked in</sub> | <sub>Security left-shifted to design phase</sub> | <sub>✅ Stable</sub> |
 
 <p align="right">(<a href="#top">back to top ↑</a>)</p>
 
@@ -109,11 +109,11 @@ flowchart TD
 
 **Component Responsibilities:**
 
-| Layer | Category | Purpose |
+| <sub>Layer</sub> | <sub>Category</sub> | <sub>Purpose</sub> |
 |-------|----------|---------|
-| Orchestration | `priority/` | Multi-phase planning, execution tracking, gap analysis |
-| Workflow | `workflow/` | Cross-cutting SDLC automation: init, audit, README, config |
-| Implementation | `coding/` | Specific engineering tasks: API, test, review, debug, refactor |
+| <sub>Orchestration</sub> | <sub>`priority/`</sub> | <sub>Multi-phase planning, execution tracking, gap analysis</sub> |
+| <sub>Workflow</sub> | <sub>`workflow/`</sub> | <sub>Cross-cutting SDLC automation: init, audit, README, config</sub> |
+| <sub>Implementation</sub> | <sub>`coding/`</sub> | <sub>Specific engineering tasks: API, test, review, debug, refactor</sub> |
 
 <p align="right">(<a href="#top">back to top ↑</a>)</p>
 
@@ -128,12 +128,12 @@ pie title Prompt Distribution by Category (54 Total)
   "Priority (3)" : 3
 ```
 
-| Category | Count | Percentage | Description |
+| <sub>Category</sub> | <sub>Count</sub> | <sub>Percentage</sub> | <sub>Description</sub> |
 |----------|-------|------------|-------------|
-| `coding/` | 42 | 77.8% | Specific engineering workflow prompts |
-| `workflow/` | 9 | 16.7% | SDLC meta-workflow and automation prompts |
-| `priority/` | 3 | 5.5% | High-level orchestration and tracking prompts |
-| **Total** | **54** | **100%** | All categories |
+| <sub>`coding/`</sub> | <sub>42</sub> | <sub>77.8%</sub> | <sub>Specific engineering workflow prompts</sub> |
+| <sub>`workflow/`</sub> | <sub>9</sub> | <sub>16.7%</sub> | <sub>SDLC meta-workflow and automation prompts</sub> |
+| <sub>`priority/`</sub> | <sub>3</sub> | <sub>5.5%</sub> | <sub>High-level orchestration and tracking prompts</sub> |
+| <sub>**Total**</sub> | <sub>**54**</sub> | <sub>**100%**</sub> | <sub>All categories</sub> |
 
 <p align="right">(<a href="#top">back to top ↑</a>)</p>
 
@@ -227,14 +227,14 @@ sequenceDiagram
 
 ## Technology Stack
 
-| Technology | Purpose | Why Chosen | Alternatives Considered |
+| <sub>Technology</sub> | <sub>Purpose</sub> | <sub>Why Chosen</sub> | <sub>Alternatives Considered</sub> |
 |------------|---------|------------|------------------------|
-| **Markdown** | Prompt format | Universally renderable; native GitHub support | YAML-only configs (less human-readable) |
-| **Python 3** | Validation & catalog scripts | Fast scripting; rich stdlib; CI-friendly | Bash-only (fragile for complex logic) |
-| **Node.js / Prettier** | Markdown formatting | Industry-standard formatter; configurable | `mdformat` (less ecosystem support) |
-| **markdownlint** | Markdown lint | Enforces consistent style rules | Manual review (unreliable at scale) |
-| **YAML Frontmatter** | Prompt metadata | Machine-parseable; human-readable | JSON header (verbose) |
-| **Mermaid** | Diagrams in prompts/docs | Native GitHub rendering; no external images | PlantUML (requires server render) |
+| <sub>**Markdown**</sub> | <sub>Prompt format</sub> | <sub>Universally renderable; native GitHub support</sub> | <sub>YAML-only configs (less human-readable)</sub> |
+| <sub>**Python 3**</sub> | <sub>Validation & catalog scripts</sub> | <sub>Fast scripting; rich stdlib; CI-friendly</sub> | <sub>Bash-only (fragile for complex logic)</sub> |
+| <sub>**Node.js / Prettier**</sub> | <sub>Markdown formatting</sub> | <sub>Industry-standard formatter; configurable</sub> | <sub>`mdformat` (less ecosystem support)</sub> |
+| <sub>**markdownlint**</sub> | <sub>Markdown lint</sub> | <sub>Enforces consistent style rules</sub> | <sub>Manual review (unreliable at scale)</sub> |
+| <sub>**YAML Frontmatter**</sub> | <sub>Prompt metadata</sub> | <sub>Machine-parseable; human-readable</sub> | <sub>JSON header (verbose)</sub> |
+| <sub>**Mermaid**</sub> | <sub>Diagrams in prompts/docs</sub> | <sub>Native GitHub rendering; no external images</sub> | <sub>PlantUML (requires server render)</sub> |
 
 <p align="right">(<a href="#top">back to top ↑</a>)</p>
 
@@ -318,54 +318,54 @@ The script scaffolds a new prompt with the standard frontmatter, Engineering Rig
 
 **Coding Prompts (42)**
 
-| Prompt | Domain |
+| <sub>Prompt</sub> | <sub>Domain</sub> |
 |--------|--------|
-| `algorithm-optimizer.md` | Performance |
-| `api-code-generator.md` | APIs |
-| `code-refactoring-guide.md` | Refactoring |
-| `code-review-assistant.md` | Review |
-| `comprehensive-code-review.md` | Review |
-| `comprehensive-testing.md` | Testing |
-| `database-optimizer.md` | Data |
-| `dependency-upgrade-strategy.md` | DevOps |
-| `graphql-api-developer.md` | APIs |
-| `legacy-code-modernizer.md` | Refactoring |
-| `microservices-architect.md` | Architecture |
-| `performance-code-review.md` | Review |
-| `project-setup-modernizer.md` | DevOps |
-| `repo-cleanup-organizer.md` | DevOps |
-| `rest-api-developer.md` | APIs |
-| `security-code-review.md` | Security |
-| `simple-poc-development.md` | Prototyping |
-| `spec-to-code-generator.md` | Generation |
-| `system-architecture-designer.md` | Architecture |
-| `systematic-debugger.md` | Debugging |
-| `tdd-expert-assistant.md` | Testing |
-| `test-automation-strategy.md` | Testing |
-| `test-driven-development.md` | Testing |
-| _(+ 19 variant prompts)_ | Various |
+| <sub>`algorithm-optimizer.md`</sub> | <sub>Performance</sub> |
+| <sub>`api-code-generator.md`</sub> | <sub>APIs</sub> |
+| <sub>`code-refactoring-guide.md`</sub> | <sub>Refactoring</sub> |
+| <sub>`code-review-assistant.md`</sub> | <sub>Review</sub> |
+| <sub>`comprehensive-code-review.md`</sub> | <sub>Review</sub> |
+| <sub>`comprehensive-testing.md`</sub> | <sub>Testing</sub> |
+| <sub>`database-optimizer.md`</sub> | <sub>Data</sub> |
+| <sub>`dependency-upgrade-strategy.md`</sub> | <sub>DevOps</sub> |
+| <sub>`graphql-api-developer.md`</sub> | <sub>APIs</sub> |
+| <sub>`legacy-code-modernizer.md`</sub> | <sub>Refactoring</sub> |
+| <sub>`microservices-architect.md`</sub> | <sub>Architecture</sub> |
+| <sub>`performance-code-review.md`</sub> | <sub>Review</sub> |
+| <sub>`project-setup-modernizer.md`</sub> | <sub>DevOps</sub> |
+| <sub>`repo-cleanup-organizer.md`</sub> | <sub>DevOps</sub> |
+| <sub>`rest-api-developer.md`</sub> | <sub>APIs</sub> |
+| <sub>`security-code-review.md`</sub> | <sub>Security</sub> |
+| <sub>`simple-poc-development.md`</sub> | <sub>Prototyping</sub> |
+| <sub>`spec-to-code-generator.md`</sub> | <sub>Generation</sub> |
+| <sub>`system-architecture-designer.md`</sub> | <sub>Architecture</sub> |
+| <sub>`systematic-debugger.md`</sub> | <sub>Debugging</sub> |
+| <sub>`tdd-expert-assistant.md`</sub> | <sub>Testing</sub> |
+| <sub>`test-automation-strategy.md`</sub> | <sub>Testing</sub> |
+| <sub>`test-driven-development.md`</sub> | <sub>Testing</sub> |
+| <sub>_(+ 19 variant prompts)_</sub> | <sub>Various</sub> |
 
 **Workflow Prompts (9)**
 
-| Prompt | Purpose |
+| <sub>Prompt</sub> | <sub>Purpose</sub> |
 |--------|---------|
-| `beast-mode-tasksync.md` | Aggressive task sync & unblocking |
-| `copilot-focus-config.md` | Copilot agent customization |
-| `iterative-improvement-workflow.md` | Continuous improvement cycles |
-| `operational-rules-standards.md` | Engineering standards enforcement |
-| `phase-implementation-guide.md` | Phase-by-phase implementation |
-| `phased-test-strategy.md` | Test strategy per SDLC phase |
-| `project-completion-audit.md` | Final delivery gate audit |
-| `universal-project-initialization.md` | Project bootstrap blueprint |
-| `universal-readme-generator.md` | Showcase README generation |
+| <sub>`beast-mode-tasksync.md`</sub> | <sub>Aggressive task sync & unblocking</sub> |
+| <sub>`copilot-focus-config.md`</sub> | <sub>Copilot agent customization</sub> |
+| <sub>`iterative-improvement-workflow.md`</sub> | <sub>Continuous improvement cycles</sub> |
+| <sub>`operational-rules-standards.md`</sub> | <sub>Engineering standards enforcement</sub> |
+| <sub>`phase-implementation-guide.md`</sub> | <sub>Phase-by-phase implementation</sub> |
+| <sub>`phased-test-strategy.md`</sub> | <sub>Test strategy per SDLC phase</sub> |
+| <sub>`project-completion-audit.md`</sub> | <sub>Final delivery gate audit</sub> |
+| <sub>`universal-project-initialization.md`</sub> | <sub>Project bootstrap blueprint</sub> |
+| <sub>`universal-readme-generator.md`</sub> | <sub>Showcase README generation</sub> |
 
 **Priority Prompts (3)**
 
-| Prompt | Purpose |
+| <sub>Prompt</sub> | <sub>Purpose</sub> |
 |--------|---------|
-| `project-plan-executor.md` | Multi-phase plan orchestration |
-| `progress-tracker-plan-comparison.md` | Plan vs. actual gap analysis |
-| `README.md` | Priority category guide |
+| <sub>`project-plan-executor.md`</sub> | <sub>Multi-phase plan orchestration</sub> |
+| <sub>`progress-tracker-plan-comparison.md`</sub> | <sub>Plan vs. actual gap analysis</sub> |
+| <sub>`README.md`</sub> | <sub>Priority category guide</sub> |
 
 </details>
 
@@ -403,14 +403,14 @@ The three priority prompts form a closed feedback loop: plan → execute → aud
 
 ### 🧪 Test Coverage Matrix
 
-| Test Type | Prompt | Gate |
+| <sub>Test Type</sub> | <sub>Prompt</sub> | <sub>Gate</sub> |
 |-----------|--------|------|
-| Unit tests | `tdd-expert-assistant` | Test gate |
-| Integration | `comprehensive-testing` | Test gate |
-| Performance | `performance-code-review` | Quality gate |
-| Security | `security-code-review` | Security gate |
-| Strategy | `test-automation-strategy` | Scope gate |
-| Phased | `phased-test-strategy` | Build gate |
+| <sub>Unit tests</sub> | <sub>`tdd-expert-assistant`</sub> | <sub>Test gate</sub> |
+| <sub>Integration</sub> | <sub>`comprehensive-testing`</sub> | <sub>Test gate</sub> |
+| <sub>Performance</sub> | <sub>`performance-code-review`</sub> | <sub>Quality gate</sub> |
+| <sub>Security</sub> | <sub>`security-code-review`</sub> | <sub>Security gate</sub> |
+| <sub>Strategy</sub> | <sub>`test-automation-strategy`</sub> | <sub>Scope gate</sub> |
+| <sub>Phased</sub> | <sub>`phased-test-strategy`</sub> | <sub>Build gate</sub> |
 
 <p align="right">(<a href="#top">back to top ↑</a>)</p>
 
@@ -440,12 +440,12 @@ gantt
     Prompt testing framework   :         e3, 2026-10-01, 2027-01-01
 ```
 
-| Phase | Goals | Target | Status |
+| <sub>Phase</sub> | <sub>Goals</sub> | <sub>Target</sub> | <sub>Status</sub> |
 |-------|-------|--------|--------|
-| Foundation | Core coding prompts, SDLC gates | Q1–Q2 2024 | ✅ Complete |
-| Growth | Priority orchestration, workflow prompts | 2024–2025 | ✅ Complete |
-| Quality | Engineering rigor, guard-first functions, README gen | 2025–2026 | ✅ Complete |
-| Expansion | CI/CD prompts, agentic workflows, test framework | 2026–2027 | 🟡 In Progress |
+| <sub>Foundation</sub> | <sub>Core coding prompts, SDLC gates</sub> | <sub>Q1–Q2 2024</sub> | <sub>✅ Complete</sub> |
+| <sub>Growth</sub> | <sub>Priority orchestration, workflow prompts</sub> | <sub>2024–2025</sub> | <sub>✅ Complete</sub> |
+| <sub>Quality</sub> | <sub>Engineering rigor, guard-first functions, README gen</sub> | <sub>2025–2026</sub> | <sub>✅ Complete</sub> |
+| <sub>Expansion</sub> | <sub>CI/CD prompts, agentic workflows, test framework</sub> | <sub>2026–2027</sub> | <sub>🟡 In Progress</sub> |
 
 <p align="right">(<a href="#top">back to top ↑</a>)</p>
 
@@ -453,18 +453,18 @@ gantt
 
 ## Development Status
 
-| Metric | Value |
+| <sub>Metric</sub> | <sub>Value</sub> |
 |--------|-------|
-| Version | 2.0 |
-| Total Prompts | 54 |
-| Stability | Stable |
-| Coding Prompts | 42 |
-| Workflow Prompts | 9 |
-| Priority Prompts | 3 |
-| Engineering Rigor Sections | 54/54 (100%) |
-| Function Construction Standard | 54/54 (100%) |
-| SDLC Gate Checklists | 54/54 (100%) |
-| Known Limitations | Prompts require human judgment for context tuning |
+| <sub>Version</sub> | <sub>2.0</sub> |
+| <sub>Total Prompts</sub> | <sub>54</sub> |
+| <sub>Stability</sub> | <sub>Stable</sub> |
+| <sub>Coding Prompts</sub> | <sub>42</sub> |
+| <sub>Workflow Prompts</sub> | <sub>9</sub> |
+| <sub>Priority Prompts</sub> | <sub>3</sub> |
+| <sub>Engineering Rigor Sections</sub> | <sub>54/54 (100%)</sub> |
+| <sub>Function Construction Standard</sub> | <sub>54/54 (100%)</sub> |
+| <sub>SDLC Gate Checklists</sub> | <sub>54/54 (100%)</sub> |
+| <sub>Known Limitations</sub> | <sub>Prompts require human judgment for context tuning</sub> |
 
 > [!NOTE]
 > The library contains no runtime code that executes. All prompts are static Markdown files. Validation scripts in `scripts/` verify frontmatter structure and catalog accuracy.
